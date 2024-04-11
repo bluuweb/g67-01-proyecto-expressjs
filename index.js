@@ -3,9 +3,10 @@ import express from 'express'
 const app = express()
 
 // estoy escuchando si hacen la petición a: http://localhost:5000/api/v2/pokemon/ditto
-app.get('/api/v2/pokemon/ditto', (req, res) => {
+app.post('/api/v2/pokemon/ditto', (req, res) => {
     res.json({
-        name: 'ditto'
+        name: 'ditto',
+        id: '131'
     })
 })
 
