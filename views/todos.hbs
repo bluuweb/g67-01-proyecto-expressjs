@@ -2,9 +2,28 @@
 
 <ul>
     {{#each todos}}
-    <li>{{this.title}}</li>
+
+    {{> todoList title=this.title}}
+
     {{/each}}
+
 </ul>
+
+{{!-- <ul>
+    {{#each todos}}
+    <li>
+        {{#if this.done}}
+
+        <u>{{this.title}}</u>
+
+        {{else}}
+
+        {{this.title}}
+
+        {{/if}}
+    </li>
+    {{/each}}
+</ul> --}}
 
 {{!-- todos.forEach(() => {
 
